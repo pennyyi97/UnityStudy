@@ -75,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -153,20 +153,20 @@ TextureImporter:
       name: mana_health_energy_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 50
-        width: 12
-        height: 12
+        x: 2
+        y: 51
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 70a81dc7366e054d0800000000000000
-      internalID: -3147762824561718777
+      spriteID: b62cda1ff273b4778987695d8a9b1249
+      internalID: -726129456
       vertices: []
       indices: 
       edges: []
@@ -175,20 +175,20 @@ TextureImporter:
       name: mana_health_energy_1
       rect:
         serializedVersion: 2
-        x: 25
-        y: 50
-        width: 14
-        height: 12
+        x: 26
+        y: 51
+        width: 12
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f156952b76f892a30800000000000000
-      internalID: 4191038603781563679
+      spriteID: 81d9a952f2a48421b87f2d265a717a8a
+      internalID: -1983441403
       vertices: []
       indices: 
       edges: []
@@ -197,20 +197,20 @@ TextureImporter:
       name: mana_health_energy_2
       rect:
         serializedVersion: 2
-        x: 51
-        y: 50
-        width: 12
-        height: 12
+        x: 52
+        y: 51
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 260bfe4080f5cd730800000000000000
-      internalID: 4025196655009575010
+      spriteID: d89f281a529d547e284d0c8e3fd85bec
+      internalID: 2032919029
       vertices: []
       indices: 
       edges: []
@@ -219,20 +219,20 @@ TextureImporter:
       name: mana_health_energy_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 25
-        width: 14
-        height: 14
+        x: 1
+        y: 26
+        width: 12
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e387b00d0ca2d6f30800000000000000
-      internalID: 4570356204463421502
+      spriteID: 72c432bd6d7a64a3a9de9946a2e43000
+      internalID: -536821987
       vertices: []
       indices: 
       edges: []
@@ -241,20 +241,20 @@ TextureImporter:
       name: mana_health_energy_4
       rect:
         serializedVersion: 2
-        x: 24
-        y: 25
-        width: 16
-        height: 14
+        x: 25
+        y: 26
+        width: 14
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c6e87fb34500479c0800000000000000
-      internalID: -3930516213004267924
+      spriteID: 39dc5be6e2a2f47d5b3fa8d74ebb4ce3
+      internalID: -1382823788
       vertices: []
       indices: 
       edges: []
@@ -263,20 +263,20 @@ TextureImporter:
       name: mana_health_energy_5
       rect:
         serializedVersion: 2
-        x: 50
-        y: 25
-        width: 14
-        height: 14
+        x: 51
+        y: 26
+        width: 12
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b0917e90b1c2bd400800000000000000
-      internalID: 349921890693224715
+      spriteID: 6295d2cf6c253489ebf349379cb1398a
+      internalID: 282536439
       vertices: []
       indices: 
       edges: []
@@ -285,20 +285,20 @@ TextureImporter:
       name: mana_health_energy_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1
-        width: 14
-        height: 14
+        x: 1
+        y: 2
+        width: 12
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4fc8d2b86c1064930800000000000000
-      internalID: 4126988060781808884
+      spriteID: d6bdeeb505733411fa9d121f1549bb7d
+      internalID: 1795543027
       vertices: []
       indices: 
       edges: []
@@ -307,20 +307,20 @@ TextureImporter:
       name: mana_health_energy_7
       rect:
         serializedVersion: 2
-        x: 24
-        y: 1
-        width: 16
-        height: 14
+        x: 25
+        y: 2
+        width: 14
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 22535edb01a435050800000000000000
-      internalID: 5788051381867066658
+      spriteID: d0632b7dec8004525b653e673d61e1d4
+      internalID: 11871461
       vertices: []
       indices: 
       edges: []
@@ -329,20 +329,20 @@ TextureImporter:
       name: mana_health_energy_8
       rect:
         serializedVersion: 2
-        x: 49
-        y: 1
-        width: 15
-        height: 16
+        x: 50
+        y: 3
+        width: 13
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c5d1bb3051cf9c5a0800000000000000
-      internalID: -6500387419945493156
+      spriteID: 2ad31b3d6aee44f808cf10caae8e879b
+      internalID: -1365405034
       vertices: []
       indices: 
       edges: []
@@ -351,7 +351,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9b2b4c6d13fc248e38614ccfa1bacf2f
     internalID: 0
     vertices: []
     indices: 
@@ -360,7 +360,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mana_health_energy_0: -726129456
+      mana_health_energy_1: -1983441403
+      mana_health_energy_2: 2032919029
+      mana_health_energy_3: -536821987
+      mana_health_energy_4: -1382823788
+      mana_health_energy_5: 282536439
+      mana_health_energy_6: 1795543027
+      mana_health_energy_7: 11871461
+      mana_health_energy_8: -1365405034
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
