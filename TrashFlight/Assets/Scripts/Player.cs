@@ -11,6 +11,9 @@ public class Player : MonoBehaviour
     [SerializeField]
     private Transform shootTransform;
 
+    [SerializeField]
+    private float shootInterval = 0.05f;
+    private float lastShotTime = 0f;
     void Update()
     {
         // float horizontalInput = Input.GetAxisRaw("Horizontal"); //키보드 방향키 왼/오
@@ -38,6 +41,12 @@ public class Player : MonoBehaviour
     }
 
     void Shoot() {
-        Instantiate(weapon,shootTransform.position, Quaternion.identity);
+        //마지막으로 쏜 시간 - 지금 시간이 인터벌보다 클때 새로운 미사일 발사하도록
+        if (Time.time - lastShotTime > shootInterval){ // Time.time : 게임이 시작 된 이후로 현재까지 흐른 시간
+            Instantiate(weapon,shootTransform.position, Quaternion.identity); //미사일이 캐릭터 머리 위에서부터 발사될 수 있도록 함
+            
+            //지금 시간을 lastshottime으로 업데이트
+            lastShotTime = Time.time;
+        }
     }
 }
