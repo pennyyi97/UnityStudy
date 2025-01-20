@@ -6,6 +6,10 @@ public class Enemy : MonoBehaviour
     private float moveSpeed = 10f;
 
     private float minY = -7;
+
+    public void setMoveSpeed(float moveSpeed){ //외부에서 스피드 설정한거 사용할 수 있도록 설정
+        this.moveSpeed = moveSpeed;
+    }
     void Update()
     {
         transform.position += Vector3.down * moveSpeed * Time.deltaTime;

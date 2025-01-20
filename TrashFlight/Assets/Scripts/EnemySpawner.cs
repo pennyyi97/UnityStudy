@@ -24,23 +24,26 @@ public class EnemySpawner : MonoBehaviour
 
         int enemyIndex = 0;
         int spawnCount = 0;
+        float moveSpeed = 5f;
 
         while (true){
             foreach (float pos in arrPosX)
             {
-                SpawnEnemy(pos, enemyIndex);
+                SpawnEnemy(pos, enemyIndex, moveSpeed);
             }
             spawnCount ++;
 
             if (spawnCount % 10 == 0)
             {
                 enemyIndex += 1;
+                moveSpeed += 2f; //적이 내려오는 속도 점점 빠르게
+                
             }
             yield return new WaitForSeconds(spawnInterval); //foreach가 끝나고 잠깐 기다렸다가 다시 시작. setTimeout같은건가?
         }
     }
 
-    void SpawnEnemy(float posX, int index) {
+    void SpawnEnemy(float posX, int index, float moveSpeed) {
         Vector3 spawnPos = new Vector3(posX, transform.position.y, transform.position.z);
 
         if (Random.Range(0,5) == 0) //중간에 한번 나오는 강한 몹 나오도록 처리해주기
@@ -53,8 +56,9 @@ public class EnemySpawner : MonoBehaviour
             index = enemies.Length -1;
         }
 
-        Instantiate(enemies[index], spawnPos, Quaternion.identity);
+        //적 이동속도 Enemy에 반영
+        GameObject enemyObj = Instantiate(enemies[index], spawnPos, Quaternion.identity);
+        Enemy enemy = enemyObj.GetComponent<Enemy>();
+        enemy.setMoveSpeed(moveSpeed);
     }
-
-
 }
