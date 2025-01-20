@@ -3,7 +3,10 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     [SerializeField]
-    private float moveSpeed = 10;
+    private float moveSpeed = 10f;
+
+    [SerializeField]
+    public float damage = 1f;
     void Start() 
     {
         Destroy(gameObject, 1f);//1초 뒤에 미사일 삭제
