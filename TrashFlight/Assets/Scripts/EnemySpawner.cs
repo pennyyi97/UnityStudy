@@ -21,20 +21,37 @@ public class EnemySpawner : MonoBehaviour
 
     IEnumerator EnemyRoutine(){
         yield return new WaitForSeconds(3f); //괄호 안의 시간동안 다음작업하기까지 기다림
+
+        int enemyIndex = 0;
+        int spawnCount = 0;
+
         while (true){
             foreach (float pos in arrPosX)
             {
-                int index = Random.Range(0, enemies.Length); //랜덤으로 enemy의 인덱스 뽑아주기
-                SpawnEnemy(pos, index);
-                
+                SpawnEnemy(pos, enemyIndex);
             }
+            spawnCount ++;
 
+            if (spawnCount % 10 == 0)
+            {
+                enemyIndex += 1;
+            }
             yield return new WaitForSeconds(spawnInterval); //foreach가 끝나고 잠깐 기다렸다가 다시 시작. setTimeout같은건가?
         }
     }
 
     void SpawnEnemy(float posX, int index) {
         Vector3 spawnPos = new Vector3(posX, transform.position.y, transform.position.z);
+
+        if (Random.Range(0,5) == 0) //중간에 한번 나오는 강한 몹 나오도록 처리해주기
+        {
+            index += 1;
+        }
+
+        if (index >= enemies.Length)
+        {
+            index = enemies.Length -1;
+        }
 
         Instantiate(enemies[index], spawnPos, Quaternion.identity);
     }
