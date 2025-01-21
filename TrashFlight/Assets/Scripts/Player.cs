@@ -55,6 +55,9 @@ public class Player : MonoBehaviour
         if (other.gameObject.tag == "Enemy") {
             Debug.Log("Game Over");
             Destroy(gameObject);
+        } else if(other.gameObject.tag == "Coin"){
+            Debug.Log("Coin +1 ");
+            Destroy(other.gameObject);
         }
     }
 }
