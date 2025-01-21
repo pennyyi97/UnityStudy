@@ -56,7 +56,7 @@ public class Player : MonoBehaviour
             Debug.Log("Game Over");
             Destroy(gameObject);
         } else if(other.gameObject.tag == "Coin"){
-            Debug.Log("Coin +1 ");
+            GameManager.instance.IncreaseCoin(); //싱글톤을 쓰면 이렇게 .만으로 호출해서 사용할 수 있음
             Destroy(other.gameObject);
         }
     }
