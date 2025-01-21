@@ -6,7 +6,8 @@ public class Player : MonoBehaviour
     [SerializeField] //유니티에서 직접 값을 변경후 확인할 수 있도록 함
     private float  moveSpeed;
     [SerializeField]
-    private GameObject weapon;
+    private GameObject[] weapons;
+    private int weaponIndex = 0; //무기 업그레이드 시 가져올 무기 index
 
     [SerializeField]
     private Transform shootTransform;
@@ -43,7 +44,7 @@ public class Player : MonoBehaviour
     void Shoot() {
         //마지막으로 쏜 시간 - 지금 시간이 인터벌보다 클때 새로운 미사일 발사하도록
         if (Time.time - lastShotTime > shootInterval){ // Time.time : 게임이 시작 된 이후로 현재까지 흐른 시간
-            Instantiate(weapon,shootTransform.position, Quaternion.identity); //미사일이 캐릭터 머리 위에서부터 발사될 수 있도록 함
+            Instantiate(weapons[weaponIndex],shootTransform.position, Quaternion.identity); //미사일이 캐릭터 머리 위에서부터 발사될 수 있도록 함
             
             //지금 시간을 lastshottime으로 업데이트
             lastShotTime = Time.time;
@@ -58,6 +59,17 @@ public class Player : MonoBehaviour
         } else if(other.gameObject.tag == "Coin"){
             GameManager.instance.IncreaseCoin(); //싱글톤을 쓰면 이렇게 .만으로 호출해서 사용할 수 있음
             Destroy(other.gameObject);
+        }
+    }
+
+
+    //무기 업그레이드
+    public void Upgrade(){
+        weaponIndex += 1; //무기 업그레이드
+        //가지고 있는 무기 종류보다 커지면 예외 처리
+        if (weaponIndex >= weapons.Length)
+        {
+            weaponIndex = weapons.Length - 1;
         }
     }
 }

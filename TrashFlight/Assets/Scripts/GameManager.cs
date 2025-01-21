@@ -21,5 +21,16 @@ public class GameManager : MonoBehaviour
     public void IncreaseCoin(){
         coin += 1;
         text.SetText(coin.ToString()); //화면에 코인 얻은 갯수 표시
+
+        //coin 30개 단위로 먹었을 때 무기 업그레이드
+        if (coin % 10 == 0)
+        {
+            //게임 내에서 gameobject 찾아서 가져옴
+            Player player = FindAnyObjectByType<Player>();
+            if (player != null)
+            {
+                player.Upgrade();
+            }
+        }
     }
 }
