@@ -10,6 +10,9 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     private float hp =1f;
 
+    [SerializeField]
+    private GameObject coin;
+
     public void setMoveSpeed(float moveSpeed){ //외부에서 스피드 설정한거 사용할 수 있도록 설정
         this.moveSpeed = moveSpeed;
     }
@@ -34,6 +37,8 @@ public class Enemy : MonoBehaviour
             if (hp <= 0)
             {
                 Destroy(gameObject);
+                //적 위치에서 코인 생성되도록 함
+                Instantiate(coin,transform.position, Quaternion.identity);
             }
 
             Destroy(other.gameObject);
