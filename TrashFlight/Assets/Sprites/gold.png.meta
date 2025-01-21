@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -152,28 +152,6 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 17
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 03e60a1faa3dc88a0800000000000000
-      internalID: -6301429047446442448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gold_1
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -182,10 +160,32 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e649e425c3e2c1ba0800000000000000
-      internalID: -6116963357262179218
+      spriteID: 82592a3d6aecd4e5e9c8c97777697248
+      internalID: -615932961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gold_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57bd0abf7d694e5499f92a940e64b31
+      internalID: 1202407225
       vertices: []
       indices: 
       edges: []
@@ -194,9 +194,9 @@ TextureImporter:
       name: gold_2
       rect:
         serializedVersion: 2
-        x: 36
+        x: 37
         y: 0
-        width: 12
+        width: 10
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -204,10 +204,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f4c231d1669f7c6b0800000000000000
-      internalID: -5275974221471470513
+      spriteID: 10b2c249d5f00474c9678493b4569702
+      internalID: 598138071
       vertices: []
       indices: 
       edges: []
@@ -216,29 +216,7 @@ TextureImporter:
       name: gold_3
       rect:
         serializedVersion: 2
-        x: 55
-        y: 0
-        width: 8
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bea4e4f821e02c470800000000000000
-      internalID: 8413302526757980907
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gold_4
-      rect:
-        serializedVersion: 2
-        x: 73
+        x: 56
         y: 0
         width: 6
         height: 16
@@ -248,10 +226,32 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c1ca713d244f333b0800000000000000
-      internalID: -5533810949261644772
+      spriteID: 8c23cf1af0a9b4cc7ba9cc3bee00b29c
+      internalID: -1975746382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gold_4
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 0
+        width: 4
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f29703bfb8a5474995dfd439eab83e1
+      internalID: 274727335
       vertices: []
       indices: 
       edges: []
@@ -260,9 +260,9 @@ TextureImporter:
       name: gold_5
       rect:
         serializedVersion: 2
-        x: 89
+        x: 90
         y: 0
-        width: 8
+        width: 6
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -270,10 +270,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4c0143dc2163b2750800000000000000
-      internalID: 6281173559678341316
+      spriteID: 72648d7c130b54063b458bff13a501ce
+      internalID: 781092108
       vertices: []
       indices: 
       edges: []
@@ -282,9 +282,9 @@ TextureImporter:
       name: gold_6
       rect:
         serializedVersion: 2
-        x: 104
+        x: 105
         y: 0
-        width: 12
+        width: 10
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -292,10 +292,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d6c54715690075af0800000000000000
-      internalID: -407856595642065811
+      spriteID: 18d82b392ef3a44cab241a74f1c41ddd
+      internalID: 1281098970
       vertices: []
       indices: 
       edges: []
@@ -304,9 +304,9 @@ TextureImporter:
       name: gold_7
       rect:
         serializedVersion: 2
-        x: 119
+        x: 120
         y: 0
-        width: 16
+        width: 14
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -314,10 +314,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3b7c42eca4bfadd60800000000000000
-      internalID: 7915915593761736627
+      spriteID: b72fdc57a8b534789aea1848e62230a7
+      internalID: 796312790
       vertices: []
       indices: 
       edges: []
@@ -326,7 +326,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f61b586251f0743f28f39a5c5a149690
     internalID: 0
     vertices: []
     indices: 
@@ -335,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gold_0: -615932961
+      gold_1: 1202407225
+      gold_2: 598138071
+      gold_3: -1975746382
+      gold_4: 274727335
+      gold_5: 781092108
+      gold_6: 1281098970
+      gold_7: 796312790
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
