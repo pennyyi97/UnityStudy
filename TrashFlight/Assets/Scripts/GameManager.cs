@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     private TextMeshProUGUI text;
     private int coin = 0;
 
+    [HideInInspector] //public 이지만 유니티에서는 숨김처리
+    public bool isGameOver = false; //게임 오버 판단
+
 
     void Awake() { //Start 메소드보다 먼저 호출됨
         if (instance == null)
@@ -36,6 +39,8 @@ public class GameManager : MonoBehaviour
 
     //게임 오버 확인
     public void SetGameOver(){
+        isGameOver = true;
+        
         EnemySpawner enemySpawner = FindAnyObjectByType<EnemySpawner> ();
         if (enemySpawner != null){
             enemySpawner.StopEnemyRoutine();

@@ -37,8 +37,12 @@ public class Player : MonoBehaviour
         float toX = Mathf.Clamp( mousePos.x, -2.35f, 2.35f); //value가 최솟값보다 작으면 최솟값을, 크면 최대값으로 설정하게 해주는 method
 
         transform.position = new Vector3(toX, transform.position.y, transform.position.z); //마우스 위치로 플레이어 x 위치 변경, y&z는 현재 위치 고정
-
-        Shoot();
+        
+        //게임 오버됐는지 판단
+        if (GameManager.instance.isGameOver == false)
+        {
+            Shoot();
+        }
     }
 
     void Shoot() {
