@@ -53,13 +53,13 @@ public class Player : MonoBehaviour
     
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.tag == "Enemy") {
+        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Boss") {
             Debug.Log("Game Over");
             Destroy(gameObject);
         } else if(other.gameObject.tag == "Coin"){
             GameManager.instance.IncreaseCoin(); //싱글톤을 쓰면 이렇게 .만으로 호출해서 사용할 수 있음
             Destroy(other.gameObject);
-        }
+        } 
     }
 
 

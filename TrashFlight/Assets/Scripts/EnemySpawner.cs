@@ -5,6 +5,9 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField]
     private GameObject[] enemies;
+
+    [SerializeField]
+    private GameObject boss;
     private float[] arrPosX = {-2.2f, -1.1f, 0f, 1.1f, 2.2f};
 
     [SerializeField]
@@ -39,6 +42,15 @@ public class EnemySpawner : MonoBehaviour
                 moveSpeed += 2f; //적이 내려오는 속도 점점 빠르게
                 
             }
+
+            //보스몹 등장
+            if (enemyIndex >= enemies.Length)
+            {
+                SpawnBoss(); 
+                //보스가 등장하면 다시 초반 난이도로 돌아가도록
+                enemyIndex = 0;
+                moveSpeed = 5f;
+            }
             yield return new WaitForSeconds(spawnInterval); //foreach가 끝나고 잠깐 기다렸다가 다시 시작. setTimeout같은건가?
         }
     }
@@ -60,5 +72,9 @@ public class EnemySpawner : MonoBehaviour
         GameObject enemyObj = Instantiate(enemies[index], spawnPos, Quaternion.identity);
         Enemy enemy = enemyObj.GetComponent<Enemy>();
         enemy.setMoveSpeed(moveSpeed);
+    }
+
+    void SpawnBoss(){
+        Instantiate(boss, transform.position, Quaternion.identity);
     }
 }
