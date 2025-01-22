@@ -36,6 +36,11 @@ public class Enemy : MonoBehaviour
 
             if (hp <= 0)
             {
+                //공격받은 게 보스이면 바로 게임종료 처리
+                if (gameObject.tag == "Boss")
+                {
+                    GameManager.instance.SetGameOver();
+                }
                 Destroy(gameObject);
                 //적 위치에서 코인 생성되도록 함
                 Instantiate(coin,transform.position, Quaternion.identity);

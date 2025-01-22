@@ -33,4 +33,12 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+    //게임 오버 확인
+    public void SetGameOver(){
+        EnemySpawner enemySpawner = FindAnyObjectByType<EnemySpawner> ();
+        if (enemySpawner != null){
+            enemySpawner.StopEnemyRoutine();
+        }
+    }
 }

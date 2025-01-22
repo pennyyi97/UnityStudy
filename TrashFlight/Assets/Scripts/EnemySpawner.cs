@@ -22,6 +22,11 @@ public class EnemySpawner : MonoBehaviour
         StartCoroutine("EnemyRoutine");
     }
 
+    //게임오버되면 코루틴 끝나게 처리
+    public void StopEnemyRoutine(){
+        StopCoroutine("EnemyRoutine");
+    }
+
     IEnumerator EnemyRoutine(){
         yield return new WaitForSeconds(3f); //괄호 안의 시간동안 다음작업하기까지 기다림
 
