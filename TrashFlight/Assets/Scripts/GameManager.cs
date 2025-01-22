@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -29,7 +30,7 @@ public class GameManager : MonoBehaviour
         text.SetText(coin.ToString()); //화면에 코인 얻은 갯수 표시
 
         //coin 30개 단위로 먹었을 때 무기 업그레이드
-        if (coin % 10 == 0)
+        if (coin % 30 == 0)
         {
             //게임 내에서 gameobject 찾아서 가져옴
             Player player = FindAnyObjectByType<Player>();
@@ -56,5 +57,9 @@ public class GameManager : MonoBehaviour
     void ShowGameOverPanel(){
         //게임오버되면 게임오버 패널 보이게 설정
         gameOverPanel.SetActive(true);
+    }
+
+    public void PlayAgain(){
+        SceneManager.LoadScene("SampleScene"); //재시작 버튼 누르면 게임 씬을 다시 불러오기
     }
 }
